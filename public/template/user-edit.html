@@ -1,0 +1,25 @@
+<div company-banner></div>
+<div layout="column" layout-padding ng-cloak>
+    <br/>
+    <form name="editUserForm" ng-submit="ModifyUser()">
+        <md-content class="autoScroll">
+            <md-input-container md-no-float class="md-icon-float md-block">
+                <i class="material-icons">person</i>
+                <input ng-model="user.name" type="text" placeholder="Full Name*" ng-required="true">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                <i class="material-icons">phone</i>
+                <input ng-model="user.phone" type="text" placeholder="Phone Number*" ng-required="true">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                <i class="material-icons">mail</i>
+                <input ng-model="user.email" type="email" placeholder="Email*" ng-required="true" >
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                <i class="material-icons">place</i>
+                <input ng-model="user.address" type="text" placeholder="Address*" ng-required="true">
+            </md-input-container>
+        </md-content>
+        <md-button class="fullWidth" type="submit" class="md-primary">Save</md-button>
+    </form>
+</div>

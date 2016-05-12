@@ -1,0 +1,20 @@
+<div company-banner></div>
+<div ng-cloak>
+    <md-content>
+        <md-list class="fullWidth" >
+            <md-list-item class="md-2-line" ng-repeat="user in userList">
+                <div class="fullWidth" layout="row" layout-align="space-between center">
+                    <div class="md-list-item-text">
+                        <h3> {{ user.phone }} </h3>
+                        <p> {{ user.name }} </p>
+                    </div>
+                    <div>
+                        <i class="material-icons link" title="Edit User" ng-click="UserAction(actions.EDIT, user)">create</i>
+                        <i class="material-icons link" title="Delete User" ng-click="UserAction(actions.DELETE, user)">remove_circle_outline</i>
+                    </div>
+                </div>
+            </md-list-item>
+    </md-list>
+    </md-content>
+    <md-button class="fullWidth md-primary" ng-click="UserAction(actions.CREATE)">Add User</md-button>
+</div>

@@ -1,0 +1,13 @@
+/*Material Overrides*/
+md-list{
+  display: inline-table !important;
+}
+
+
+.fullWidth{
+  width:100%;
+}
+
+.link{
+  cursor: pointer;
+}
